@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convrt — Free Online File Converter | Minimal & Fast</title>
+    <meta name="description" content="Convert your documents, PDFs, and images securely. 100% free, no ads, no file storage.">
+
+    <!-- Sosyal Medya / SEO -->
+    <meta property="og:title" content="Convrt — Free Online File Converter" />
+    <meta property="og:description" content="Convert your documents, PDFs, and images securely. 100% free, no ads, no file storage." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- Güncellenmiş PNG Favicon Linki -->
+    <link rel="icon" type="image/png" href="https://i.hizliresim.com/z7ic9kol.png">
+    
+    <!-- FontAwesome İkonları ve Geometrik Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Convrt<span>.</span></div>
+        <div class="nav-links">
+            <div class="language-selector">
+                <span class="lang-option active" data-lang="en">EN</span>
+                <span class="lang-divider">/</span>
+                <span class="lang-option" data-lang="tr">TR</span>
+            </div>
+            <button id="theme-toggle" class="theme-btn" data-i18n="lightMode">Light Mode</button>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <h1 class="hero-title" data-i18n="title">100% Free. Lightning Fast.<br><span class="accent-text">Zero Ads.</span></h1>
+        <p class="hero-subtitle" data-i18n="subtitle">Secure, local-first conversion. Your files are never stored.</p>
+
+        <div class="converter-card">
+            <div id="drop-zone" class="drop-zone">
+                <div class="drop-content">
+                    <div class="upload-icon">
+                        <i class="fa-solid fa-cloud-arrow-up" style="font-size: 26px;"></i>
+                    </div>
+                    <p class="drop-title" data-i18n="dropTitle">Drag & drop your file here</p>
+                    <p class="drop-desc" data-i18n="dropDesc">or click to browse from your computer</p>
+                    <input type="file" id="file-input" hidden>
+                </div>
+            </div>
+            
+            <div class="supported-badges">
+                <span>PDF</span> • <span>DOCX</span> • <span>XLSX</span> • <span>CSV</span> • <span>TXT</span> • <span>HTML</span> • <span>JPG</span> • <span>PNG</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- İMZA VE SOSYAL MEDYA ALANI -->
+    <footer class="footer">
+        <p data-i18n="builtBy">Built by Çağlar Sapmaz</p>
+        <div class="footer-links">
+            <a href="https://github.com/caglarsapmaz" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/caglarsapmaz" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>

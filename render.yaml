@@ -1,0 +1,12 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+# Bu dosyayı kullanarak tek tıkla dağıtım: Render'da "New → Blueprint" seçin
+# ve bu repoyu bağlayın. Ücretsiz (free) plan kullanılır.
+services:
+  - type: web
+    name: convrt
+    runtime: python
+    plan: free
+    autoDeploy: true
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.index:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
